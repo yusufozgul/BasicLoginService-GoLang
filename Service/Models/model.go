@@ -1,10 +1,9 @@
 package Models
 
 type LoginResponse struct {
-	Error   error     `json:"error"`
-	Message string    `json:"message"`
-	Success bool      `json:"success"`
-	Data    LoginData `json:"data"`
+	Message string     `json:"message"`
+	Success bool       `json:"success"`
+	Data    *LoginData `json:"data"`
 }
 
 type LoginData struct {
